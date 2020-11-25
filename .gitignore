@@ -1,0 +1,6 @@
+# Terraform artifacts to exclude from repository
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars

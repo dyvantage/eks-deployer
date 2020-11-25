@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 locals {
-  cluster_name = "training-eks-${random_string.suffix.result}"
+  cluster_name = "dyvantage-eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {

@@ -17,3 +17,8 @@ Once the cluster is built, run this command to configure `kubectl` to talk to th
 ```
 aws eks --region $(terraform output region) update-kubeconfig --name $(terraform output cluster_name)
 ```
+
+Now you can manage the new cluste with `kubectl`.  For a quick test, list the worker nodes:
+```
+kubectl get nodes
+```

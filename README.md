@@ -20,5 +20,9 @@ aws eks --region $(terraform output region) update-kubeconfig --name $(terraform
 
 Now you can manage the new cluste with `kubectl`.  For a quick test, list the worker nodes:
 ```
-kubectl get nodes
+$ kubectl get nodes
+NAME                                       STATUS   ROLES    AGE    VERSION
+ip-10-0-1-158.us-east-2.compute.internal   Ready    <none>   110s   v1.17.12-eks-7684af
+ip-10-0-3-164.us-east-2.compute.internal   Ready    <none>   108s   v1.17.12-eks-7684af
+ip-10-0-3-59.us-east-2.compute.internal    Ready    <none>   107s   v1.17.12-eks-7684af
 ```
